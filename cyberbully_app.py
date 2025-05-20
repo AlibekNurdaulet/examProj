@@ -1,3 +1,4 @@
+# Import necessary libraries
 import os
 import sys
 import re
@@ -13,10 +14,12 @@ from sklearn.metrics import classification_report, accuracy_score
 import joblib
 from datetime import datetime
 
+# Download stopwords and initialize stop words set
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
 STOP_WORDS = set(stopwords.words('english'))
 
+# Define file paths: dataset, saved models, vectorizer, and log file
 DATA_PATH         = "cyberbullying_tweets.csv"
 VECTORIZER_PATH   = "tfidf_vectorizer.pkl"
 LOGREG_MODEL_PATH = "logreg_model.pkl"
