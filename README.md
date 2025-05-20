@@ -2,6 +2,6 @@ Please first install libraries:
 
 <b>pip install pandas numpy nltk scikit-learn joblib </b>
 
-Then run: 
+Then go to directory with code then run: 
 
-python3 cyberbully_app.py
+<b> python3 cyberbully_app.py </b>
